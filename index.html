@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of R. Dedeepya, a full-stack developer and UI/UX designer based in Bengaluru." />
+  <title>R. Dedeepya — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#hero" class="nav__logo" aria-label="R. Dedeepya - Home"><span class="nav__logo-bracket">[</span>RD<span class="nav__logo-bracket">]</span></a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about" class="nav__link">about</a></li>
+        <li><a href="#projects" class="nav__link">projects</a></li>
+        <li><a href="#skills" class="nav__link">skills</a></li>
+        <li><a href="#experience" class="nav__link">experience</a></li>
+        <li><a href="#contact" class="nav__link">contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme"><span class="theme-toggle__icon" aria-hidden="true">◐</span></button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="hamburger__bar"></span><span class="hamburger__bar"></span><span class="hamburger__bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="hero" aria-label="Introduction">
+      <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero__content">
+        <p class="hero__greeting" aria-hidden="true"><span class="token-keyword">const</span> <span class="token-var">developer</span> <span class="token-op">=</span> { <span class="token-comment">// 🐱 she/her</span></p>
+        <h1 class="hero__name">Dedeepya</h1>
+        <p class="hero__title" aria-label="Full-Stack Developer, UI/UX Designer, Problem Solver"><span class="prompt" aria-hidden="true">&gt;</span><span class="typed-text" id="typed-text"></span><span class="cursor" aria-hidden="true"></span></p>
+        <p class="hero__closing" aria-hidden="true">} <span class="token-comment">// powered by chai &amp; cat naps ☕</span></p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator" aria-hidden="true"><span class="hero__scroll-line"></span><span class="hero__scroll-label">scroll</span></div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 class="section__title" id="about-heading">About</h2>
+        <div class="about__grid">
+          <div class="fade-in">
+            <p class="about__lead">I build things for the web, with a keen eye for design and a cat on my keyboard. 🐾</p>
+            <p class="about__body">I'm a BCA student at PES University with a strong foundation in full-stack web development, database management, and UI/UX design. I love building scalable software that is as thoughtful in design as it is in engineering.</p>
+            <p class="about__body">When I'm not coding, I'm sketching UI concepts in Figma, tinkering with NLP and computer vision side projects, or spending time with my cats 🐱.</p>
+            <a href="resume.pdf" download="Dedeepya_Resume.pdf" class="btn btn--outline"><i class="fa fa-download" aria-hidden="true"></i> Resume</a>
+          </div>
+          <dl class="facts fade-in">
+            <div><dt>Location</dt><dd>Bengaluru, India</dd></div>
+            <div><dt>Education</dt><dd>BCA, PES University (CGPA 8.67)</dd></div>
+            <div><dt>Focus</dt><dd>Full-stack web, UI/UX, NLP, computer vision</dd></div>
+            <div><dt>Languages</dt><dd>English, Kannada, Tamil</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 class="section__title" id="projects-heading">Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card fade-in">
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" aria-label="Hand Gesture Recognition code" title="View code"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+              <a href="#" class="project-card__link" aria-label="Hand Gesture Recognition live demo" title="Live demo"><i class="fa fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+            <h3 class="project-card__title">Hand Gesture Recognition</h3>
+            <p class="project-card__desc">Real-time OpenCV application that detects hand gestures via webcam and displays a matching image, using contour detection and convex hull analysis.</p>
+            <ul class="project-card__tags" aria-label="Technologies"><li class="tag">Python</li><li class="tag">OpenCV</li><li class="tag">Contour detection</li></ul>
+            <p class="project-card__category">ML / CV, 2026</p>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" aria-label="NLP to SQL Converter code" title="View code"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+              <a href="#" class="project-card__link" aria-label="NLP to SQL Converter live demo" title="Live demo"><i class="fa fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+            <h3 class="project-card__title">NLP to SQL Converter</h3>
+            <p class="project-card__desc">Python tool that turns plain English questions into executable SQL queries for a user-defined database schema, bridging natural language and structured data.</p>
+            <ul class="project-card__tags" aria-label="Technologies"><li class="tag">Python</li><li class="tag">NLP</li><li class="tag">SQL</li></ul>
+            <p class="project-card__category">Backend, 2026</p>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" aria-label="Icon Library code" title="View code"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+              <a href="#" class="project-card__link" aria-label="Icon Library live demo" title="Live demo"><i class="fa fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+            <h3 class="project-card__title">Custom JS Icon Library</h3>
+            <p class="project-card__desc">A reusable icon library built from scratch with JavaScript and CSS, using Figma for a consistent, cohesive visual language.</p>
+            <ul class="project-card__tags" aria-label="Technologies"><li class="tag">JavaScript</li><li class="tag">CSS</li><li class="tag">Figma</li></ul>
+            <p class="project-card__category">Frontend, 2024</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 class="section__title" id="skills-heading">Skills</h2>
+        <div class="skills__grid">
+          <div class="fade-in">
+            <h3 class="skills__group-title">Frontend</h3><div class="skill-bars"><div class="skill-bar" data-level="88"><div class="skill-bar__label"><span>HTML5 &amp; CSS3</span><span class="skill-bar__pct" aria-hidden="true">88%</span></div><div class="skill-bar__track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 and CSS3 proficiency"><div class="skill-bar__fill"></div></div></div><div class="skill-bar" data-level="82"><div class="skill-bar__label"><span>JavaScript</span><span class="skill-bar__pct" aria-hidden="true">82%</span></div><div class="skill-bar__track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency"><div class="skill-bar__fill"></div></div></div><div class="skill-bar" data-level="80"><div class="skill-bar__label"><span>Figma / UI design</span><span class="skill-bar__pct" aria-hidden="true">80%</span></div><div class="skill-bar__track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Figma / UI design proficiency"><div class="skill-bar__fill"></div></div></div></div>
+          </div>
+          <div class="fade-in">
+            <h3 class="skills__group-title">Backend &amp; database</h3><div class="skill-bars"><div class="skill-bar" data-level="85"><div class="skill-bar__label"><span>Python</span><span class="skill-bar__pct" aria-hidden="true">85%</span></div><div class="skill-bar__track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency"><div class="skill-bar__fill"></div></div></div><div class="skill-bar" data-level="78"><div class="skill-bar__label"><span>PHP</span><span class="skill-bar__pct" aria-hidden="true">78%</span></div><div class="skill-bar__track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="PHP proficiency"><div class="skill-bar__fill"></div></div></div><div class="skill-bar" data-level="80"><div class="skill-bar__label"><span>SQL</span><span class="skill-bar__pct" aria-hidden="true">80%</span></div><div class="skill-bar__track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="SQL proficiency"><div class="skill-bar__fill"></div></div></div><div class="skill-bar" data-level="70"><div class="skill-bar__label"><span>MongoDB</span><span class="skill-bar__pct" aria-hidden="true">70%</span></div><div class="skill-bar__track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="MongoDB proficiency"><div class="skill-bar__fill"></div></div></div></div>
+          </div>
+          <div class="fade-in">
+            <h3 class="skills__group-title">Languages &amp; tools</h3><div class="skill-bars"><div class="skill-bar" data-level="75"><div class="skill-bar__label"><span>C</span><span class="skill-bar__pct" aria-hidden="true">75%</span></div><div class="skill-bar__track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="C proficiency"><div class="skill-bar__fill"></div></div></div><div class="skill-bar" data-level="72"><div class="skill-bar__label"><span>OpenCV / NLP</span><span class="skill-bar__pct" aria-hidden="true">72%</span></div><div class="skill-bar__track" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" aria-label="OpenCV / NLP proficiency"><div class="skill-bar__fill"></div></div></div><div class="skill-bar" data-level="82"><div class="skill-bar__label"><span>Git / GitHub</span><span class="skill-bar__pct" aria-hidden="true">82%</span></div><div class="skill-bar__track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Git / GitHub proficiency"><div class="skill-bar__fill"></div></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <h2 class="section__title" id="experience-heading">Experience</h2>
+        <ol class="timeline">
+
+          <li class="timeline__item fade-in">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <div class="timeline__card">
+              <div class="timeline__meta"><span class="timeline__period">2025, 1–2 months</span><span class="timeline__tag">Internship</span></div>
+              <h3 class="timeline__role">Software Developer Intern</h3>
+              <p class="timeline__company">GOAVEGA, Bengaluru</p>
+              <p class="timeline__desc">Contributed to full-stack web application features across frontend and backend codebases. Took part in code reviews and iterative development cycles, and debugged existing modules to improve reliability and user experience.</p>
+            </div>
+          </li>
+
+          <li class="timeline__item fade-in">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <div class="timeline__card">
+              <div class="timeline__meta"><span class="timeline__period">2024 to present</span><span class="timeline__tag">Education</span></div>
+              <h3 class="timeline__role">Bachelor of Computer Applications</h3>
+              <p class="timeline__company">PES University, Bengaluru</p>
+              <p class="timeline__desc">Current CGPA 8.67 / 10. Building a foundation in full-stack development, database management, algorithms, and UI/UX design, with hands-on projects in Python, NLP, and computer vision.</p>
+            </div>
+          </li>
+
+          <li class="timeline__item fade-in">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <div class="timeline__card">
+              <div class="timeline__meta"><span class="timeline__period">Certifications</span></div>
+              <h3 class="timeline__role">Technical certifications</h3>
+              <p class="timeline__company">Infosys Springboard &amp; Udemy</p>
+              <p class="timeline__desc">HTML5, CSS3, and JavaScript (Infosys Springboard); Cybersecurity Basics and SQL Basics (Udemy).</p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 class="section__title" id="contact-heading">Contact</h2>
+        <div class="contact__grid">
+          <div class="fade-in">
+            <p class="contact__lead">Have a project in mind or just want to say hi? I'm open to new opportunities, and cat pictures are always welcome. 🐾</p>
+            <ul class="social-links" aria-label="Social and contact links">
+              <li><a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i><span>github.com/dedeepya</span></a></li>
+              <li><a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a></li>
+              <li><a href="mailto:dedeepya944@gmail.com" class="social-link"><i class="fa fa-envelope" aria-hidden="true"></i><span>dedeepya944@gmail.com</span></a></li>
+              <li><a href="tel:+919483606458" class="social-link"><i class="fa fa-phone" aria-hidden="true"></i><span>+91 94836 06458</span></a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form fade-in" id="contact-form" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label class="form-label" for="name">Name</label>
+              <input class="form-input" type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required aria-describedby="name-error" />
+              <span class="form-error" id="name-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required aria-describedby="email-error" />
+              <span class="form-error" id="email-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input class="form-input" type="text" id="subject" name="subject" placeholder="What's this about?" required aria-describedby="subject-error" />
+              <span class="form-error" id="subject-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-input form-textarea" id="message" name="message" placeholder="Tell me about your project or idea..." rows="5" required aria-describedby="message-error"></textarea>
+              <span class="form-error" id="message-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full"><span class="btn__text">Send message</span><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            <p class="form-success" id="form-success" role="status" hidden><i class="fa fa-check-circle" aria-hidden="true"></i> <span id="form-status"></span></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 R. Dedeepya 🐱</p>
+      <p>Python · JavaScript · SQL · Figma</p>
+    </div>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
